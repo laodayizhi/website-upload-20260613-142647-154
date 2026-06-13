@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>热播推荐榜 - 口碑国产好剧</title>
+    <meta name="description" content="热播推荐榜汇集站内热门电影、电视剧与动画内容，提供高清在线播放入口和相关推荐内链。">
+    <meta name="keywords" content="热播榜,口碑国产好剧,国产视频,免费在线观看,电视剧推荐,电影推荐">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body class="bg-slate-950 text-white">
+    <header class="bg-slate-900 text-white sticky top-0 z-50 shadow-lg site-header">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex items-center space-x-2 text-xl font-bold logo-link">
+                    <span class="logo-mark">▶</span>
+                    <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">口碑国产好剧</span>
+                </a>
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="hover:text-cyan-400 transition-colors">首页</a>
+                    <div class="relative group nav-dropdown">
+                        <a href="categories.html" class="hover:text-cyan-400 transition-colors">分类</a>
+                        <div class="absolute top-full left-0 mt-2 bg-slate-800 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[160px] dropdown-panel">
+                    <a href="category-hot.html" class="block px-4 py-2 hover:bg-slate-700 first:rounded-t-lg last:rounded-b-lg transition-colors">热播推荐</a>
+                    <a href="category-new.html" class="block px-4 py-2 hover:bg-slate-700 first:rounded-t-lg last:rounded-b-lg transition-colors">年度新片</a>
+                    <a href="category-editors.html" class="block px-4 py-2 hover:bg-slate-700 first:rounded-t-lg last:rounded-b-lg transition-colors">编辑精选</a>
+                    <a href="category-quality.html" class="block px-4 py-2 hover:bg-slate-700 first:rounded-t-lg last:rounded-b-lg transition-colors">口碑佳作</a>
+                    <a href="category-cinema.html" class="block px-4 py-2 hover:bg-slate-700 first:rounded-t-lg last:rounded-b-lg transition-colors">高清影院</a>
+                    <a href="category-series.html" class="block px-4 py-2 hover:bg-slate-700 first:rounded-t-lg last:rounded-b-lg transition-colors">剧集片库</a>
+                    <a href="category-movies.html" class="block px-4 py-2 hover:bg-slate-700 first:rounded-t-lg last:rounded-b-lg transition-colors">电影频道</a>
+                    <a href="category-top.html" class="block px-4 py-2 hover:bg-slate-700 first:rounded-t-lg last:rounded-b-lg transition-colors">高分看点</a>
+                        </div>
+                    </div>
+                    <a href="ranking.html" class="hover:text-cyan-400 transition-colors">热播榜</a>
+                    <a href="search.html" class="hover:text-cyan-400 transition-colors">搜索</a>
+                </nav>
+                <form class="hidden md:flex items-center relative" action="search.html" method="get" data-site-search>
+                    <input type="search" name="q" class="bg-slate-800 text-white pl-4 pr-10 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-cyan-400 w-48 lg:w-64" placeholder="搜索影片、地区、标签">
+                    <button class="absolute right-3 top-1/2 -translate-y-1/2" aria-label="搜索">
+                        <span class="search-icon">⌕</span>
+                    </button>
+                </form>
+                <button class="md:hidden menu-toggle" aria-label="展开导航" data-menu-toggle>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="md:hidden py-4 border-t border-slate-700 mobile-panel" data-mobile-menu>
+                <form class="mb-4 relative" action="search.html" method="get" data-site-search>
+                    <input type="search" name="q" class="w-full bg-slate-800 text-white pl-4 pr-10 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-cyan-400" placeholder="搜索影片、简介、标签">
+                    <button class="absolute right-3 top-1/2 -translate-y-1/2" aria-label="搜索">⌕</button>
+                </form>
+                <nav class="space-y-2">
+                    <a href="index.html" class="block py-2 hover:text-cyan-400 transition-colors">首页</a>
+                    <a href="categories.html" class="block py-2 hover:text-cyan-400 transition-colors">分类总览</a>
+                    <a href="ranking.html" class="block py-2 hover:text-cyan-400 transition-colors">热播榜</a>
+                    <a href="search.html" class="block py-2 hover:text-cyan-400 transition-colors">搜索</a>
+                    <div class="space-y-1 text-sm text-gray-400 py-1">
+                    <a href="category-hot.html" class="block py-2 pl-4 hover:text-cyan-400 transition-colors">热播推荐</a>
+                    <a href="category-new.html" class="block py-2 pl-4 hover:text-cyan-400 transition-colors">年度新片</a>
+                    <a href="category-editors.html" class="block py-2 pl-4 hover:text-cyan-400 transition-colors">编辑精选</a>
+                    <a href="category-quality.html" class="block py-2 pl-4 hover:text-cyan-400 transition-colors">口碑佳作</a>
+                    <a href="category-cinema.html" class="block py-2 pl-4 hover:text-cyan-400 transition-colors">高清影院</a>
+                    <a href="category-series.html" class="block py-2 pl-4 hover:text-cyan-400 transition-colors">剧集片库</a>
+                    <a href="category-movies.html" class="block py-2 pl-4 hover:text-cyan-400 transition-colors">电影频道</a>
+                    <a href="category-top.html" class="block py-2 pl-4 hover:text-cyan-400 transition-colors">高分看点</a>
+                    <a href="category-discover.html" class="block py-2 pl-4 hover:text-cyan-400 transition-colors">发现频道</a>
+                    <a href="category-classic.html" class="block py-2 pl-4 hover:text-cyan-400 transition-colors">经典回看</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="min-h-screen bg-slate-950">
+        <section class="page-hero bg-slate-900">
+            <div class="container mx-auto px-4 py-16">
+                <p class="page-kicker">Hot Ranking</p>
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">热播推荐榜</h1>
+                <p class="text-gray-300 text-lg max-w-3xl">综合年份、题材与站内推荐强度整理，便于快速进入热门影片详情页。</p>
+            </div>
+        </section>
+        <section class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1334.html" class="flex gap-4 items-center">
+                        <span class="rank-num">01</span>
+                        <img src="./134.jpg" alt="十年日本" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">十年日本</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2030 · 日本 · 科幻 / 剧情</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1231.html" class="flex gap-4 items-center">
+                        <span class="rank-num">02</span>
+                        <img src="./31.jpg" alt="魔法禁书目录第一季" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">魔法禁书目录第一季</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2029 · 日本 · 科幻，奇幻，冒险</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1253.html" class="flex gap-4 items-center">
+                        <span class="rank-num">03</span>
+                        <img src="./53.jpg" alt="垫底俱乐部" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">垫底俱乐部</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2029 · 美国 · 喜剧 / 校园 / 成长</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1286.html" class="flex gap-4 items-center">
+                        <span class="rank-num">04</span>
+                        <img src="./86.jpg" alt="知音" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">知音</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2028 · 中国大陆 · 剧情， 历史， 音乐</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0540.html" class="flex gap-4 items-center">
+                        <span class="rank-num">05</span>
+                        <img src="./90.jpg" alt="空中致胜" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">空中致胜</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2028 · 美国 · 科幻动作</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1148.html" class="flex gap-4 items-center">
+                        <span class="rank-num">06</span>
+                        <img src="./98.jpg" alt="大话西游终结篇" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">大话西游终结篇</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2028 · 中国香港 · 奇幻，爱情，喜剧</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0372.html" class="flex gap-4 items-center">
+                        <span class="rank-num">07</span>
+                        <img src="./72.jpg" alt="告别亲爱的大地" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">告别亲爱的大地</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2028 · 中国台湾 · 剧情 / 家庭</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0803.html" class="flex gap-4 items-center">
+                        <span class="rank-num">08</span>
+                        <img src="./53.jpg" alt="爱之地" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">爱之地</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2028 · 法国 / 比利时 · 剧情， 同性， 家庭</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0854.html" class="flex gap-4 items-center">
+                        <span class="rank-num">09</span>
+                        <img src="./104.jpg" alt="寻找无限的尽头" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">寻找无限的尽头</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2028 · 英国/美国 · 冒险， 剧情， 奇幻</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0037.html" class="flex gap-4 items-center">
+                        <span class="rank-num">10</span>
+                        <img src="./37.jpg" alt="明月守护者" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">明月守护者</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2028 · 中国大陆 · 奇幻 / 动作 / 古装</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0851.html" class="flex gap-4 items-center">
+                        <span class="rank-num">11</span>
+                        <img src="./101.jpg" alt="月宫乐园" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">月宫乐园</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2028 · 美国 / 中国 · 科幻 / 灾难 / 冒险</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0185.html" class="flex gap-4 items-center">
+                        <span class="rank-num">12</span>
+                        <img src="./35.jpg" alt="北之萤" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">北之萤</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2028 · 日本 · 爱情 / 奇幻 / 历史</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0955.html" class="flex gap-4 items-center">
+                        <span class="rank-num">13</span>
+                        <img src="./55.jpg" alt="中国的战争" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">中国的战争</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 中国大陆 · 历史， 战争， 剧情</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1907.html" class="flex gap-4 items-center">
+                        <span class="rank-num">14</span>
+                        <img src="./107.jpg" alt="芭比逐梦大都会" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">芭比逐梦大都会</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 美国 · 动画 / 歌舞 / 冒险</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0177.html" class="flex gap-4 items-center">
+                        <span class="rank-num">15</span>
+                        <img src="./27.jpg" alt="钢牙佬星空显威风" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">钢牙佬星空显威风</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 马来西亚 · 喜剧 / 科幻</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1711.html" class="flex gap-4 items-center">
+                        <span class="rank-num">16</span>
+                        <img src="./61.jpg" alt="三个绑匪七条心" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">三个绑匪七条心</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 中国香港 · 喜剧, 犯罪, 黑色幽默</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0189.html" class="flex gap-4 items-center">
+                        <span class="rank-num">17</span>
+                        <img src="./39.jpg" alt="相爱的停损点" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">相爱的停损点</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 中国香港 · 剧情 / 爱情 / 家庭</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1344.html" class="flex gap-4 items-center">
+                        <span class="rank-num">18</span>
+                        <img src="./144.jpg" alt="回马亭" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">回马亭</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 中国大陆 · 武侠/悬疑/历史</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1688.html" class="flex gap-4 items-center">
+                        <span class="rank-num">19</span>
+                        <img src="./38.jpg" alt="梦墙" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">梦墙</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 中国/法国 · 文艺/奇幻</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0048.html" class="flex gap-4 items-center">
+                        <span class="rank-num">20</span>
+                        <img src="./48.jpg" alt="没有窗户的房子" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">没有窗户的房子</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 欧洲 · 惊悚 / 心理</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1146.html" class="flex gap-4 items-center">
+                        <span class="rank-num">21</span>
+                        <img src="./96.jpg" alt="小蝌蚪找妈妈" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">小蝌蚪找妈妈</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 中国大陆 · 动画，奇幻</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0325.html" class="flex gap-4 items-center">
+                        <span class="rank-num">22</span>
+                        <img src="./25.jpg" alt="美丽人生颂" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">美丽人生颂</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 中国 · 音乐</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0770.html" class="flex gap-4 items-center">
+                        <span class="rank-num">23</span>
+                        <img src="./20.jpg" alt="再见玛丽·包萍" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">再见玛丽·包萍</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 英国 · 奇幻、剧情</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0128.html" class="flex gap-4 items-center">
+                        <span class="rank-num">24</span>
+                        <img src="./128.jpg" alt="怒河春醒" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">怒河春醒</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 中国大陆 · 文艺剧情</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0928.html" class="flex gap-4 items-center">
+                        <span class="rank-num">25</span>
+                        <img src="./28.jpg" alt="惨痛的战争" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">惨痛的战争</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 波兰 · 战争 / 剧情</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0967.html" class="flex gap-4 items-center">
+                        <span class="rank-num">26</span>
+                        <img src="./67.jpg" alt="夜鹰" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">夜鹰</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 波兰 / 美国 · 动作 / 惊悚 / 战争</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0966.html" class="flex gap-4 items-center">
+                        <span class="rank-num">27</span>
+                        <img src="./66.jpg" alt="赫拉尼特利" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">赫拉尼特利</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 意大利/英国 · 科幻/惊悚/文艺</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0763.html" class="flex gap-4 items-center">
+                        <span class="rank-num">28</span>
+                        <img src="./13.jpg" alt="我在火星的生活" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">我在火星的生活</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 美国 · 科幻，剧情，生存</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1625.html" class="flex gap-4 items-center">
+                        <span class="rank-num">29</span>
+                        <img src="./125.jpg" alt="与鸭共舞" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">与鸭共舞</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 中国香港 · 喜剧、爱情、剧情</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0286.html" class="flex gap-4 items-center">
+                        <span class="rank-num">30</span>
+                        <img src="./136.jpg" alt="转瞬即逝的天堂" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">转瞬即逝的天堂</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 英国 · 爱情 / 科幻</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1658.html" class="flex gap-4 items-center">
+                        <span class="rank-num">31</span>
+                        <img src="./8.jpg" alt="黄飞鸿" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">黄飞鸿</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 中国香港/中国大陆 · 动作/武侠/历史</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1835.html" class="flex gap-4 items-center">
+                        <span class="rank-num">32</span>
+                        <img src="./35.jpg" alt="欢乐满江湖" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">欢乐满江湖</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 中国大陆 · 喜剧 / 古装 / 武侠</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1534.html" class="flex gap-4 items-center">
+                        <span class="rank-num">33</span>
+                        <img src="./34.jpg" alt="活骷颅" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">活骷颅</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 美国 · 科幻 / 恐怖</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1154.html" class="flex gap-4 items-center">
+                        <span class="rank-num">34</span>
+                        <img src="./104.jpg" alt="寅次郎的故事6 纯情篇" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">寅次郎的故事6 纯情篇</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 日本 · 喜剧 / 家庭</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1131.html" class="flex gap-4 items-center">
+                        <span class="rank-num">35</span>
+                        <img src="./81.jpg" alt="他们不会忘记" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">他们不会忘记</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 法国 / 德国 · 剧情 / 历史</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1605.html" class="flex gap-4 items-center">
+                        <span class="rank-num">36</span>
+                        <img src="./105.jpg" alt="猎巫行动：大灭绝" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">猎巫行动：大灭绝</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 英国 · 动作/奇幻</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1486.html" class="flex gap-4 items-center">
+                        <span class="rank-num">37</span>
+                        <img src="./136.jpg" alt="上海幻梦" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">上海幻梦</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 中国大陆 · 爱情， 悬疑， 历史</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1843.html" class="flex gap-4 items-center">
+                        <span class="rank-num">38</span>
+                        <img src="./43.jpg" alt="比赛日" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">比赛日</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 美国 · 运动, 剧情</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1149.html" class="flex gap-4 items-center">
+                        <span class="rank-num">39</span>
+                        <img src="./99.jpg" alt="终极铁战士" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">终极铁战士</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 美国 · 动作, 科幻</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1103.html" class="flex gap-4 items-center">
+                        <span class="rank-num">40</span>
+                        <img src="./53.jpg" alt="电波袭击" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">电波袭击</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 美国 · 科幻 / 动作 / 惊悚</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0639.html" class="flex gap-4 items-center">
+                        <span class="rank-num">41</span>
+                        <img src="./39.jpg" alt="罗马春情" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">罗马春情</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 意大利 · 爱情, 剧情</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0508.html" class="flex gap-4 items-center">
+                        <span class="rank-num">42</span>
+                        <img src="./58.jpg" alt="雾的子午线" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">雾的子午线</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 法国 / 日本 · 悬疑 / 剧情</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0611.html" class="flex gap-4 items-center">
+                        <span class="rank-num">43</span>
+                        <img src="./11.jpg" alt="暴雨" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">暴雨</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 韩国 · 悬疑 / 犯罪</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1674.html" class="flex gap-4 items-center">
+                        <span class="rank-num">44</span>
+                        <img src="./24.jpg" alt="最好的雪" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">最好的雪</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 中国大陆 · 爱情 / 悬疑</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0125.html" class="flex gap-4 items-center">
+                        <span class="rank-num">45</span>
+                        <img src="./125.jpg" alt="安乐传" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">安乐传</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 中国大陆 · 古装 / 爱情 / 权谋</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0456.html" class="flex gap-4 items-center">
+                        <span class="rank-num">46</span>
+                        <img src="./6.jpg" alt="深潜强制倒带" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">深潜强制倒带</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 美国 · 科幻惊悚</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0993.html" class="flex gap-4 items-center">
+                        <span class="rank-num">47</span>
+                        <img src="./93.jpg" alt="阿飞" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">阿飞</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 中国香港 · 动作 / 犯罪 / 剧情</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0712.html" class="flex gap-4 items-center">
+                        <span class="rank-num">48</span>
+                        <img src="./112.jpg" alt="陪她一会儿" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">陪她一会儿</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2027 · 中国台湾 · 剧情 / 家庭</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1355.html" class="flex gap-4 items-center">
+                        <span class="rank-num">49</span>
+                        <img src="./5.jpg" alt="新楚留香" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">新楚留香</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国台湾 · 武侠、悬疑、爱情</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1369.html" class="flex gap-4 items-center">
+                        <span class="rank-num">50</span>
+                        <img src="./19.jpg" alt="狂犬末日" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">狂犬末日</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 韩国 · 动作 / 惊悚 / 灾难</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0788.html" class="flex gap-4 items-center">
+                        <span class="rank-num">51</span>
+                        <img src="./38.jpg" alt="紧急降落" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">紧急降落</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 美国 · 灾难 / 惊悚 / 群像</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0299.html" class="flex gap-4 items-center">
+                        <span class="rank-num">52</span>
+                        <img src="./149.jpg" alt="乐园追放 心之共鸣" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">乐园追放 心之共鸣</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 日本 · 科幻, 音乐, 治愈</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1654.html" class="flex gap-4 items-center">
+                        <span class="rank-num">53</span>
+                        <img src="./4.jpg" alt="欲满夏湾拿" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">欲满夏湾拿</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 古巴 / 西班牙 · 剧情 / 情色</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0687.html" class="flex gap-4 items-center">
+                        <span class="rank-num">54</span>
+                        <img src="./87.jpg" alt="青出于蓝第一季" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">青出于蓝第一季</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 香港 · 家庭, 喜剧</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1757.html" class="flex gap-4 items-center">
+                        <span class="rank-num">55</span>
+                        <img src="./107.jpg" alt="找回我自己" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">找回我自己</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 英国 · 心理科幻</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0160.html" class="flex gap-4 items-center">
+                        <span class="rank-num">56</span>
+                        <img src="./10.jpg" alt="蛇蟒星际" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">蛇蟒星际</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 美国 · 科幻 / 冒险</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1195.html" class="flex gap-4 items-center">
+                        <span class="rank-num">57</span>
+                        <img src="./145.jpg" alt="茜茜公主3" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">茜茜公主3</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 奥地利/德国 · 历史, 爱情</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0131.html" class="flex gap-4 items-center">
+                        <span class="rank-num">58</span>
+                        <img src="./131.jpg" alt="天外横财" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">天外横财</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 美国 · 科幻, 悬疑, 冒险</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0460.html" class="flex gap-4 items-center">
+                        <span class="rank-num">59</span>
+                        <img src="./10.jpg" alt="观世音传奇" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">观世音传奇</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国大陆 · 古装神话，奇幻</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0107.html" class="flex gap-4 items-center">
+                        <span class="rank-num">60</span>
+                        <img src="./107.jpg" alt="德尔苏·乌扎拉" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">德尔苏·乌扎拉</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 俄罗斯/中国 · 剧情/冒险</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1437.html" class="flex gap-4 items-center">
+                        <span class="rank-num">61</span>
+                        <img src="./87.jpg" alt="巴吉：爱的反叛者" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">巴吉：爱的反叛者</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 印度 · 剧情，爱情</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1083.html" class="flex gap-4 items-center">
+                        <span class="rank-num">62</span>
+                        <img src="./33.jpg" alt="不要小看我" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">不要小看我</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国大陆 · 喜剧 / 剧情 / 家庭</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0412.html" class="flex gap-4 items-center">
+                        <span class="rank-num">63</span>
+                        <img src="./112.jpg" alt="新浪潮" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">新浪潮</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 法国 · 剧情，爱情，音乐</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1785.html" class="flex gap-4 items-center">
+                        <span class="rank-num">64</span>
+                        <img src="./135.jpg" alt="越空追击" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">越空追击</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 美国 · 科幻 / 动作</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0169.html" class="flex gap-4 items-center">
+                        <span class="rank-num">65</span>
+                        <img src="./19.jpg" alt="失恋399年" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">失恋399年</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国大陆 · 奇幻，爱情，喜剧</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0116.html" class="flex gap-4 items-center">
+                        <span class="rank-num">66</span>
+                        <img src="./116.jpg" alt="滚拉拉的枪" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">滚拉拉的枪</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国大陆 · 西部、犯罪、黑色幽默</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0592.html" class="flex gap-4 items-center">
+                        <span class="rank-num">67</span>
+                        <img src="./142.jpg" alt="冰雪战士" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">冰雪战士</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 俄罗斯 · 动作 / 科幻 / 战争</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1139.html" class="flex gap-4 items-center">
+                        <span class="rank-num">68</span>
+                        <img src="./89.jpg" alt="悬疑作者求生指南" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">悬疑作者求生指南</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国大陆 · 悬疑, 惊悚, 喜剧</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0765.html" class="flex gap-4 items-center">
+                        <span class="rank-num">69</span>
+                        <img src="./15.jpg" alt="再见，我的新郎" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">再见，我的新郎</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国大陆 · 剧情 / 同性</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1793.html" class="flex gap-4 items-center">
+                        <span class="rank-num">70</span>
+                        <img src="./143.jpg" alt="他的摩托车，她的岛" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">他的摩托车，她的岛</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国台湾 · 爱情 / 剧情</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0983.html" class="flex gap-4 items-center">
+                        <span class="rank-num">71</span>
+                        <img src="./83.jpg" alt="雷电交加的小路" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">雷电交加的小路</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 日本 · 悬疑、奇幻、剧情</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0685.html" class="flex gap-4 items-center">
+                        <span class="rank-num">72</span>
+                        <img src="./85.jpg" alt="我的野蛮女老师" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">我的野蛮女老师</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 韩国 · 爱情喜剧</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0216.html" class="flex gap-4 items-center">
+                        <span class="rank-num">73</span>
+                        <img src="./66.jpg" alt="滇越铁路·生命的故事" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">滇越铁路·生命的故事</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国大陆 · 纪录 / 历史 / 人文</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0649.html" class="flex gap-4 items-center">
+                        <span class="rank-num">74</span>
+                        <img src="./49.jpg" alt="忠义山庄" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">忠义山庄</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国大陆 · 古装/武侠</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0104.html" class="flex gap-4 items-center">
+                        <span class="rank-num">75</span>
+                        <img src="./104.jpg" alt="蜜蜂酿蜜" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">蜜蜂酿蜜</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国大陆 · 剧情, 家庭, 文艺</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1724.html" class="flex gap-4 items-center">
+                        <span class="rank-num">76</span>
+                        <img src="./74.jpg" alt="盗影谜情" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">盗影谜情</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国大陆 · 悬疑, 爱情</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0510.html" class="flex gap-4 items-center">
+                        <span class="rank-num">77</span>
+                        <img src="./60.jpg" alt="成名机会" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">成名机会</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国大陆 · 剧情 / 喜剧 / 励志</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0663.html" class="flex gap-4 items-center">
+                        <span class="rank-num">78</span>
+                        <img src="./63.jpg" alt="大婴儿" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">大婴儿</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 美国 · 荒诞喜剧</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1019.html" class="flex gap-4 items-center">
+                        <span class="rank-num">79</span>
+                        <img src="./119.jpg" alt="保卫战队之出动喇！朋友！" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">保卫战队之出动喇！朋友！</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国香港 · 动作 / 喜剧 / 超级英雄</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0034.html" class="flex gap-4 items-center">
+                        <span class="rank-num">80</span>
+                        <img src="./34.jpg" alt="我的朋友是萌鲨" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">我的朋友是萌鲨</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国大陆 · 喜剧, 科幻, 家庭</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1792.html" class="flex gap-4 items-center">
+                        <span class="rank-num">81</span>
+                        <img src="./142.jpg" alt="无人能敌" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">无人能敌</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国大陆 · 动作 / 犯罪</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1951.html" class="flex gap-4 items-center">
+                        <span class="rank-num">82</span>
+                        <img src="./1.jpg" alt="封神英雄榜" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">封神英雄榜</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国大陆 · 古装 / 神话 / 动作</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1928.html" class="flex gap-4 items-center">
+                        <span class="rank-num">83</span>
+                        <img src="./128.jpg" alt="魔鬼游乐场" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">魔鬼游乐场</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 韩国 · 悬疑, 恐怖, 动作</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0322.html" class="flex gap-4 items-center">
+                        <span class="rank-num">84</span>
+                        <img src="./22.jpg" alt="布偶历险记：全面追缉" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">布偶历险记：全面追缉</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 美国 · 喜剧 / 冒险 / 家庭</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1533.html" class="flex gap-4 items-center">
+                        <span class="rank-num">85</span>
+                        <img src="./33.jpg" alt="江湖好汉" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">江湖好汉</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国内地 · 黑色幽默/犯罪/剧情</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1319.html" class="flex gap-4 items-center">
+                        <span class="rank-num">86</span>
+                        <img src="./119.jpg" alt="劈头士" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">劈头士</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 美国 · 恐怖、惊悚、犯罪</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1270.html" class="flex gap-4 items-center">
+                        <span class="rank-num">87</span>
+                        <img src="./70.jpg" alt="圣诞之声" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">圣诞之声</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 美国 · 剧情, 音乐, 家庭</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0259.html" class="flex gap-4 items-center">
+                        <span class="rank-num">88</span>
+                        <img src="./109.jpg" alt="为你而来" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">为你而来</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国 · 爱情 / 冒险 / 灾难</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0813.html" class="flex gap-4 items-center">
+                        <span class="rank-num">89</span>
+                        <img src="./63.jpg" alt="萨拉热窝的孩子" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">萨拉热窝的孩子</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 波黑 / 塞尔维亚 · 战争 / 剧情</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1659.html" class="flex gap-4 items-center">
+                        <span class="rank-num">90</span>
+                        <img src="./9.jpg" alt="天堂2" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">天堂2</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 美国 · 科幻、悬疑、惊悚</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1525.html" class="flex gap-4 items-center">
+                        <span class="rank-num">91</span>
+                        <img src="./25.jpg" alt="这让我想到了你" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">这让我想到了你</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 法国 · 爱情 / 奇幻</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1941.html" class="flex gap-4 items-center">
+                        <span class="rank-num">92</span>
+                        <img src="./141.jpg" alt="从今天起做龙傲天" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">从今天起做龙傲天</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国大陆 · 喜剧，奇幻，都市</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1069.html" class="flex gap-4 items-center">
+                        <span class="rank-num">93</span>
+                        <img src="./19.jpg" alt="加油小肥肥" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">加油小肥肥</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国 · 儿童 / 搞笑 / 励志</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1254.html" class="flex gap-4 items-center">
+                        <span class="rank-num">94</span>
+                        <img src="./54.jpg" alt="东野圭吾推理系列" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">东野圭吾推理系列</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 日本 · 悬疑 / 犯罪</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1181.html" class="flex gap-4 items-center">
+                        <span class="rank-num">95</span>
+                        <img src="./131.jpg" alt="动物出击" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">动物出击</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国 · 动画 / 冒险 / 家庭</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1292.html" class="flex gap-4 items-center">
+                        <span class="rank-num">96</span>
+                        <img src="./92.jpg" alt="高地人：复仇之旅" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">高地人：复仇之旅</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 美国 / 英国 · 动作, 奇幻</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0973.html" class="flex gap-4 items-center">
+                        <span class="rank-num">97</span>
+                        <img src="./73.jpg" alt="复仇者集结第三季" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">复仇者集结第三季</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 美国 · 动作 / 科幻 / 超级英雄</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0541.html" class="flex gap-4 items-center">
+                        <span class="rank-num">98</span>
+                        <img src="./91.jpg" alt="夜困摩天岭1941" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">夜困摩天岭1941</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 美国 · 黑色电影 / 悬疑 / 犯罪</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0230.html" class="flex gap-4 items-center">
+                        <span class="rank-num">99</span>
+                        <img src="./80.jpg" alt="危险的追缠" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">危险的追缠</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 韩国 · 悬疑，惊悚，犯罪</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0728.html" class="flex gap-4 items-center">
+                        <span class="rank-num">100</span>
+                        <img src="./128.jpg" alt="嗨，乔" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">嗨，乔</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 美国 · 剧情 / 家庭</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0238.html" class="flex gap-4 items-center">
+                        <span class="rank-num">101</span>
+                        <img src="./88.jpg" alt="黑蟹行动：无尽寒冬" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">黑蟹行动：无尽寒冬</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 瑞典 · 动作, 战争, 惊悚</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1423.html" class="flex gap-4 items-center">
+                        <span class="rank-num">102</span>
+                        <img src="./73.jpg" alt="巴山红浪" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">巴山红浪</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国大陆 · 剧情 / 历史</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0571.html" class="flex gap-4 items-center">
+                        <span class="rank-num">103</span>
+                        <img src="./121.jpg" alt="天空" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">天空</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国大陆 · 剧情 / 家庭 / 年代</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1887.html" class="flex gap-4 items-center">
+                        <span class="rank-num">104</span>
+                        <img src="./87.jpg" alt="师兄啊师兄" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">师兄啊师兄</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国大陆 · 喜剧, 仙侠</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0132.html" class="flex gap-4 items-center">
+                        <span class="rank-num">105</span>
+                        <img src="./132.jpg" alt="赤子传奇" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">赤子传奇</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国大陆 · 剧情 / 历史</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0448.html" class="flex gap-4 items-center">
+                        <span class="rank-num">106</span>
+                        <img src="./148.jpg" alt="一号化妆间" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">一号化妆间</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国大陆 · 悬疑, 犯罪, 剧情</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0065.html" class="flex gap-4 items-center">
+                        <span class="rank-num">107</span>
+                        <img src="./65.jpg" alt="贝尔戈维亚" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">贝尔戈维亚</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 英国 · 剧情、历史、家族</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1590.html" class="flex gap-4 items-center">
+                        <span class="rank-num">108</span>
+                        <img src="./90.jpg" alt="里普哈根传奇" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">里普哈根传奇</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 荷兰 · 冒险，历史</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1249.html" class="flex gap-4 items-center">
+                        <span class="rank-num">109</span>
+                        <img src="./49.jpg" alt="阴宅2" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">阴宅2</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国香港 / 马来西亚 · 恐怖 / 惊悚</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1389.html" class="flex gap-4 items-center">
+                        <span class="rank-num">110</span>
+                        <img src="./39.jpg" alt="汤姆猫与杰利鼠：魔戒" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">汤姆猫与杰利鼠：魔戒</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 美国 · 喜剧 / 动画 / 奇幻</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1163.html" class="flex gap-4 items-center">
+                        <span class="rank-num">111</span>
+                        <img src="./113.jpg" alt="蝴蝶效应3：启示" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">蝴蝶效应3：启示</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 美国 · 科幻 / 悬疑</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0222.html" class="flex gap-4 items-center">
+                        <span class="rank-num">112</span>
+                        <img src="./72.jpg" alt="神偷联盟" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">神偷联盟</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 美国 · 喜剧 / 犯罪</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0030.html" class="flex gap-4 items-center">
+                        <span class="rank-num">113</span>
+                        <img src="./30.jpg" alt="61街 第二季" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">61街 第二季</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 英国 · 剧情, 犯罪, 惊悚</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0142.html" class="flex gap-4 items-center">
+                        <span class="rank-num">114</span>
+                        <img src="./142.jpg" alt="杜拉拉追婚记" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">杜拉拉追婚记</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国大陆 · 爱情, 喜剧</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1734.html" class="flex gap-4 items-center">
+                        <span class="rank-num">115</span>
+                        <img src="./84.jpg" alt="妮娜的一切" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">妮娜的一切</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 西班牙 · 剧情 / 音乐 / 爱情</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0503.html" class="flex gap-4 items-center">
+                        <span class="rank-num">116</span>
+                        <img src="./53.jpg" alt="驱魔拍档" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">驱魔拍档</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 中国香港 · 喜剧 / 恐怖</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0533.html" class="flex gap-4 items-center">
+                        <span class="rank-num">117</span>
+                        <img src="./83.jpg" alt="犹太狮子" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">犹太狮子</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 美国 · 剧情 / 历史 / 战争</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0280.html" class="flex gap-4 items-center">
+                        <span class="rank-num">118</span>
+                        <img src="./130.jpg" alt="胜于胜利" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">胜于胜利</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 美国 · 体育 / 剧情 / 传记</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-0397.html" class="flex gap-4 items-center">
+                        <span class="rank-num">119</span>
+                        <img src="./97.jpg" alt="奥兹国的桃乐西" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">奥兹国的桃乐西</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 美国 · 奇幻， 冒险</span>
+                        </span>
+                    </a>
+                </article>
+                <article class="rank-row bg-slate-900 rounded-lg p-4 hover:bg-slate-800 transition-colors">
+                    <a href="movie-1151.html" class="flex gap-4 items-center">
+                        <span class="rank-num">120</span>
+                        <img src="./101.jpg" alt="深红之名" class="rank-thumb" loading="lazy">
+                        <span class="flex-1">
+                            <strong class="text-white text-lg line-clamp-1">深红之名</strong>
+                            <span class="block text-sm text-gray-400 line-clamp-1">2026 · 意大利 · 恐怖 / 悬疑 / 神秘</span>
+                        </span>
+                    </a>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-slate-900 text-gray-300">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="index.html" class="flex items-center space-x-2 mb-4 logo-link">
+                        <span class="logo-mark">▶</span>
+                        <span class="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">口碑国产好剧</span>
+                    </a>
+                    <p class="text-sm leading-relaxed max-w-md">汇集国产电视剧等视频内容，提供免费在线观看与在线点播服务，支持高清播放与分类筛选，便于按平台与热播推荐榜浏览。</p>
+                </div>
+                <div>
+                    <h2 class="font-semibold text-white mb-4">频道入口</h2>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="categories.html" class="hover:text-cyan-400 transition-colors">分类总览</a></li>
+                        <li><a href="ranking.html" class="hover:text-cyan-400 transition-colors">热播榜</a></li>
+                        <li><a href="search.html" class="hover:text-cyan-400 transition-colors">片库搜索</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="font-semibold text-white mb-4">精选分类</h2>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="category-hot.html" class="hover:text-cyan-400 transition-colors">热播推荐</a></li><li><a href="category-new.html" class="hover:text-cyan-400 transition-colors">年度新片</a></li><li><a href="category-editors.html" class="hover:text-cyan-400 transition-colors">编辑精选</a></li><li><a href="category-quality.html" class="hover:text-cyan-400 transition-colors">口碑佳作</a></li><li><a href="category-cinema.html" class="hover:text-cyan-400 transition-colors">高清影院</a></li><li><a href="category-series.html" class="hover:text-cyan-400 transition-colors">剧集片库</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 mt-8 pt-8 text-center text-sm">
+                <p>© 2026 口碑国产好剧 · 高清影视与热播推荐</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/app.js" defer></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

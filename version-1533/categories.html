@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分类总览 - 口碑国产好剧</title>
+    <meta name="description" content="汇集国产电视剧等视频内容，提供免费在线观看与在线点播服务，支持高清播放与分类筛选，便于按平台与热播推荐榜浏览。">
+    <meta name="keywords" content="国产视频免费在线观看：电视剧高清平台与热播推荐榜-口碑国产好剧,国产,视频,免费,在线观看,高清,影视大全">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body class="bg-slate-950 text-white">
+    <header class="bg-slate-900 text-white sticky top-0 z-50 shadow-lg site-header">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex items-center space-x-2 text-xl font-bold logo-link">
+                    <span class="logo-mark">▶</span>
+                    <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">口碑国产好剧</span>
+                </a>
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="hover:text-cyan-400 transition-colors">首页</a>
+                    <div class="relative group nav-dropdown">
+                        <a href="categories.html" class="hover:text-cyan-400 transition-colors">分类</a>
+                        <div class="absolute top-full left-0 mt-2 bg-slate-800 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[160px] dropdown-panel">
+                    <a href="category-hot.html" class="block px-4 py-2 hover:bg-slate-700 first:rounded-t-lg last:rounded-b-lg transition-colors">热播推荐</a>
+                    <a href="category-new.html" class="block px-4 py-2 hover:bg-slate-700 first:rounded-t-lg last:rounded-b-lg transition-colors">年度新片</a>
+                    <a href="category-editors.html" class="block px-4 py-2 hover:bg-slate-700 first:rounded-t-lg last:rounded-b-lg transition-colors">编辑精选</a>
+                    <a href="category-quality.html" class="block px-4 py-2 hover:bg-slate-700 first:rounded-t-lg last:rounded-b-lg transition-colors">口碑佳作</a>
+                    <a href="category-cinema.html" class="block px-4 py-2 hover:bg-slate-700 first:rounded-t-lg last:rounded-b-lg transition-colors">高清影院</a>
+                    <a href="category-series.html" class="block px-4 py-2 hover:bg-slate-700 first:rounded-t-lg last:rounded-b-lg transition-colors">剧集片库</a>
+                    <a href="category-movies.html" class="block px-4 py-2 hover:bg-slate-700 first:rounded-t-lg last:rounded-b-lg transition-colors">电影频道</a>
+                    <a href="category-top.html" class="block px-4 py-2 hover:bg-slate-700 first:rounded-t-lg last:rounded-b-lg transition-colors">高分看点</a>
+                        </div>
+                    </div>
+                    <a href="ranking.html" class="hover:text-cyan-400 transition-colors">热播榜</a>
+                    <a href="search.html" class="hover:text-cyan-400 transition-colors">搜索</a>
+                </nav>
+                <form class="hidden md:flex items-center relative" action="search.html" method="get" data-site-search>
+                    <input type="search" name="q" class="bg-slate-800 text-white pl-4 pr-10 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-cyan-400 w-48 lg:w-64" placeholder="搜索影片、地区、标签">
+                    <button class="absolute right-3 top-1/2 -translate-y-1/2" aria-label="搜索">
+                        <span class="search-icon">⌕</span>
+                    </button>
+                </form>
+                <button class="md:hidden menu-toggle" aria-label="展开导航" data-menu-toggle>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="md:hidden py-4 border-t border-slate-700 mobile-panel" data-mobile-menu>
+                <form class="mb-4 relative" action="search.html" method="get" data-site-search>
+                    <input type="search" name="q" class="w-full bg-slate-800 text-white pl-4 pr-10 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-cyan-400" placeholder="搜索影片、简介、标签">
+                    <button class="absolute right-3 top-1/2 -translate-y-1/2" aria-label="搜索">⌕</button>
+                </form>
+                <nav class="space-y-2">
+                    <a href="index.html" class="block py-2 hover:text-cyan-400 transition-colors">首页</a>
+                    <a href="categories.html" class="block py-2 hover:text-cyan-400 transition-colors">分类总览</a>
+                    <a href="ranking.html" class="block py-2 hover:text-cyan-400 transition-colors">热播榜</a>
+                    <a href="search.html" class="block py-2 hover:text-cyan-400 transition-colors">搜索</a>
+                    <div class="space-y-1 text-sm text-gray-400 py-1">
+                    <a href="category-hot.html" class="block py-2 pl-4 hover:text-cyan-400 transition-colors">热播推荐</a>
+                    <a href="category-new.html" class="block py-2 pl-4 hover:text-cyan-400 transition-colors">年度新片</a>
+                    <a href="category-editors.html" class="block py-2 pl-4 hover:text-cyan-400 transition-colors">编辑精选</a>
+                    <a href="category-quality.html" class="block py-2 pl-4 hover:text-cyan-400 transition-colors">口碑佳作</a>
+                    <a href="category-cinema.html" class="block py-2 pl-4 hover:text-cyan-400 transition-colors">高清影院</a>
+                    <a href="category-series.html" class="block py-2 pl-4 hover:text-cyan-400 transition-colors">剧集片库</a>
+                    <a href="category-movies.html" class="block py-2 pl-4 hover:text-cyan-400 transition-colors">电影频道</a>
+                    <a href="category-top.html" class="block py-2 pl-4 hover:text-cyan-400 transition-colors">高分看点</a>
+                    <a href="category-discover.html" class="block py-2 pl-4 hover:text-cyan-400 transition-colors">发现频道</a>
+                    <a href="category-classic.html" class="block py-2 pl-4 hover:text-cyan-400 transition-colors">经典回看</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="min-h-screen bg-slate-950">
+        <section class="page-hero bg-slate-900">
+            <div class="container mx-auto px-4 py-16">
+                <p class="page-kicker">Movie Channels</p>
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">分类总览</h1>
+                <p class="text-gray-300 text-lg max-w-3xl">汇集国产电视剧等视频内容，提供免费在线观看与在线点播服务，支持高清播放与分类筛选，便于按平台与热播推荐榜浏览。</p>
+            </div>
+        </section>
+        <section class="container mx-auto px-4 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-6">
+                <a href="category-hot.html" class="category-card bg-slate-800 rounded-lg p-6 hover:ring-2 hover:ring-cyan-400 transition-all duration-300">
+                    <span class="category-kicker">频道</span>
+                    <h2 class="text-2xl font-bold text-white mb-2">热播推荐</h2>
+                    <p class="text-sm text-gray-400 leading-relaxed">聚合近期热度较高的影视内容，适合快速浏览当下热门片单。</p>
+                </a>
+                <a href="category-new.html" class="category-card bg-slate-800 rounded-lg p-6 hover:ring-2 hover:ring-cyan-400 transition-all duration-300">
+                    <span class="category-kicker">频道</span>
+                    <h2 class="text-2xl font-bold text-white mb-2">年度新片</h2>
+                    <p class="text-sm text-gray-400 leading-relaxed">按年份与站内推荐节奏整理的新版片库，便于发现新上线影片。</p>
+                </a>
+                <a href="category-editors.html" class="category-card bg-slate-800 rounded-lg p-6 hover:ring-2 hover:ring-cyan-400 transition-all duration-300">
+                    <span class="category-kicker">频道</span>
+                    <h2 class="text-2xl font-bold text-white mb-2">编辑精选</h2>
+                    <p class="text-sm text-gray-400 leading-relaxed">精选不同地区、类型与题材的影视内容，覆盖电影、剧集与动画。</p>
+                </a>
+                <a href="category-quality.html" class="category-card bg-slate-800 rounded-lg p-6 hover:ring-2 hover:ring-cyan-400 transition-all duration-300">
+                    <span class="category-kicker">频道</span>
+                    <h2 class="text-2xl font-bold text-white mb-2">口碑佳作</h2>
+                    <p class="text-sm text-gray-400 leading-relaxed">收录剧情、悬疑、爱情、动作等多类型佳作，适合深度浏览。</p>
+                </a>
+                <a href="category-cinema.html" class="category-card bg-slate-800 rounded-lg p-6 hover:ring-2 hover:ring-cyan-400 transition-all duration-300">
+                    <span class="category-kicker">频道</span>
+                    <h2 class="text-2xl font-bold text-white mb-2">高清影院</h2>
+                    <p class="text-sm text-gray-400 leading-relaxed">面向电影爱好者整理的高清影片频道，提供清晰的卡片与详情入口。</p>
+                </a>
+                <a href="category-series.html" class="category-card bg-slate-800 rounded-lg p-6 hover:ring-2 hover:ring-cyan-400 transition-all duration-300">
+                    <span class="category-kicker">频道</span>
+                    <h2 class="text-2xl font-bold text-white mb-2">剧集片库</h2>
+                    <p class="text-sm text-gray-400 leading-relaxed">集中呈现长剧、短剧、动画剧集与网络剧等连续内容。</p>
+                </a>
+                <a href="category-movies.html" class="category-card bg-slate-800 rounded-lg p-6 hover:ring-2 hover:ring-cyan-400 transition-all duration-300">
+                    <span class="category-kicker">频道</span>
+                    <h2 class="text-2xl font-bold text-white mb-2">电影频道</h2>
+                    <p class="text-sm text-gray-400 leading-relaxed">覆盖剧情片、动作片、喜剧片、惊悚片等电影内容。</p>
+                </a>
+                <a href="category-top.html" class="category-card bg-slate-800 rounded-lg p-6 hover:ring-2 hover:ring-cyan-400 transition-all duration-300">
+                    <span class="category-kicker">频道</span>
+                    <h2 class="text-2xl font-bold text-white mb-2">高分看点</h2>
+                    <p class="text-sm text-gray-400 leading-relaxed">按照站内热度、年份与题材综合整理的高关注度内容。</p>
+                </a>
+                <a href="category-discover.html" class="category-card bg-slate-800 rounded-lg p-6 hover:ring-2 hover:ring-cyan-400 transition-all duration-300">
+                    <span class="category-kicker">频道</span>
+                    <h2 class="text-2xl font-bold text-white mb-2">发现频道</h2>
+                    <p class="text-sm text-gray-400 leading-relaxed">用于探索不同国家、地区与题材风格的综合影视频道。</p>
+                </a>
+                <a href="category-classic.html" class="category-card bg-slate-800 rounded-lg p-6 hover:ring-2 hover:ring-cyan-400 transition-all duration-300">
+                    <span class="category-kicker">频道</span>
+                    <h2 class="text-2xl font-bold text-white mb-2">经典回看</h2>
+                    <p class="text-sm text-gray-400 leading-relaxed">整理适合回味与反复浏览的影视内容，兼顾新片与经典题材。</p>
+                </a>
+            </div>
+        </section>
+        <section class="bg-slate-900 py-16">
+            <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between mb-8 section-title-wrap">
+                <div>
+                    <div class="flex items-center space-x-3">
+                        <span class="section-icon">🔥</span>
+                        <h2 class="text-3xl font-bold text-white">热播推荐</h2>
+                    </div>
+                    <p class="text-gray-400 mt-2">从分类入口继续进入详情页播放与浏览相关推荐。</p>
+                </div>
+            </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <article class="movie-card group bg-slate-800 rounded-lg overflow-hidden hover:ring-2 hover:ring-cyan-400 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-cyan-500/20" data-card data-card-text="十年日本 日本 电影 2030 科幻 / 剧情 近未来, 老龄化, 科技伦理, 单元式 2030年的日本，政府推出“幸终计划”——65岁以上老人可选择在AI陪伴下度过最后七天。 2030年，日本老龄化率突破40%，“孤独死”成为社会第一大死因。政府推出“幸终计划”：65岁以上且无亲属照顾的老人，可申请入住“终活中心”，由定制化AI陪伴度过生命最后七天。AI会学习老人一生的数据——日记、通话记录、购物清单、GPS轨迹——然后以最亲近之人的形象出现：有人看到的是已故的妻子，有人看到的是早夭的女儿，有人看到的是年轻时最好的朋友。七天结束，老人会在梦中安乐死。影片通过四个老人的最后七天，展现了四个不同的选择：一个拒绝AI，选择独自写日记；一个把AI当成了真正的女儿，最后一天说“你不是她”；一个疯狂和AI做爱；最后一个老人，在第六天夜里关闭了AI，对着空气说了一句话：“我知道你是我自己。”" data-year="2030" data-type="电影">
+                    <a href="movie-1334.html" class="block movie-card-link">
+                        <div class="movie-poster aspect-[16/9] relative overflow-hidden bg-slate-900">
+                            <img src="./134.jpg" alt="十年日本" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 card-overlay">
+                                <p class="text-sm text-gray-200 line-clamp-2">2030年的日本，政府推出“幸终计划”——65岁以上老人可选择在AI陪伴下度过最后七天。</p>
+                            </div>
+                            <div class="absolute top-3 right-3 bg-black/70 px-2 py-1 rounded text-xs flex items-center space-x-1">
+                                <span>2030</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center justify-between text-sm text-gray-400 mb-2">
+                                <span class="px-2 py-1 bg-slate-700 rounded text-xs text-cyan-400">电影</span>
+                                <span>日本</span>
+                            </div>
+                            <h2 class="text-lg font-semibold text-white mb-1 line-clamp-1">十年日本</h2>
+                            <p class="text-sm text-gray-400 line-clamp-2 mb-3">2030年的日本，政府推出“幸终计划”——65岁以上老人可选择在AI陪伴下度过最后七天。</p>
+                            <div class="tag-row"><span class="tag-chip">近未来</span><span class="tag-chip">老龄化</span><span class="tag-chip">科技伦理</span></div>
+                        </div>
+                    </a>
+                </article>
+                <article class="movie-card group bg-slate-800 rounded-lg overflow-hidden hover:ring-2 hover:ring-cyan-400 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-cyan-500/20" data-card data-card-text="魔法禁书目录第一季 日本 动画剧集 2029 科幻，奇幻，冒险 超能力，魔法，学园都市，少年漫 在超能力开发盛行的学园都市，一个零能力者少年的右手，却能“抹消”一切异能和魔法。 故事发生在科学世界侧的超能力开发都市“学园都市”，这里的学生都通过“超能力开发”获得各种超能力。上条当麻是其中唯一一个“等级0”的无能力者，但他的右手“幻想杀手”拥有能抹消一切超能力和魔法的力量。某天，他在阳台上遇见了一位从天而降的纯白修女——茵蒂克丝，她自称是英国清教的魔道书图书馆，脑中封印了十万三千本魔导书。为了保护茵蒂克丝不被魔法侧的“必要之恶教会”消除记忆，上条当麻被迫卷入了科学与魔法交错的巨大冲突中。他必须用自己“无效化”的能力，对抗各路强大的超能力者和魔法师，在守护少女的同时，揭开学园都市深处的黑暗秘密。" data-year="2029" data-type="动画剧集">
+                    <a href="movie-1231.html" class="block movie-card-link">
+                        <div class="movie-poster aspect-[16/9] relative overflow-hidden bg-slate-900">
+                            <img src="./31.jpg" alt="魔法禁书目录第一季" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 card-overlay">
+                                <p class="text-sm text-gray-200 line-clamp-2">在超能力开发盛行的学园都市，一个零能力者少年的右手，却能“抹消”一切异能和魔法。</p>
+                            </div>
+                            <div class="absolute top-3 right-3 bg-black/70 px-2 py-1 rounded text-xs flex items-center space-x-1">
+                                <span>2029</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center justify-between text-sm text-gray-400 mb-2">
+                                <span class="px-2 py-1 bg-slate-700 rounded text-xs text-cyan-400">动画剧集</span>
+                                <span>日本</span>
+                            </div>
+                            <h2 class="text-lg font-semibold text-white mb-1 line-clamp-1">魔法禁书目录第一季</h2>
+                            <p class="text-sm text-gray-400 line-clamp-2 mb-3">在超能力开发盛行的学园都市，一个零能力者少年的右手，却能“抹消”一切异能和魔法。</p>
+                            <div class="tag-row"><span class="tag-chip">超能力</span><span class="tag-chip">魔法</span><span class="tag-chip">学园都市</span></div>
+                        </div>
+                    </a>
+                </article>
+                <article class="movie-card group bg-slate-800 rounded-lg overflow-hidden hover:ring-2 hover:ring-cyan-400 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-cyan-500/20" data-card data-card-text="垫底俱乐部 美国 剧集 2029 喜剧 / 校园 / 成长 差生, 互助会, 校园喜剧, 逆袭, 友情 一所重点高中的全年级倒数20名学生，秘密组建了一个“垫底俱乐部”，目标是让所有人一起及格，以免有人被开除。 帕克高中实行残酷的“末位淘汰制”，每学期末年级排名最后20名的学生将被强制转学。化学考了9分、物理考了14分的“万年吊车尾”小胖比利，联合了另外19个同样绝望的同学，在地下室秘密成立了“垫底俱乐部”。他们的目标不是争第一，而是“全员压线及格”。俱乐部成员里有因打游戏打到手抖的、有失恋后没法集中注意力的、甚至还有故意考差想和闺蜜一起转学的。他们发明了各种歪门邪道学习法：用热门歌曲歌词记公式、在健身房练肌肉的同时背单词、用饭桌算概率。这群“学渣”在互相拖后腿和互相治愈中，逐渐发现自己并不笨，只是不适合“标准答案”。期末考最后一天，他们发现学校泄题了——而泄题者竟是他们的老师。" data-year="2029" data-type="剧集">
+                    <a href="movie-1253.html" class="block movie-card-link">
+                        <div class="movie-poster aspect-[16/9] relative overflow-hidden bg-slate-900">
+                            <img src="./53.jpg" alt="垫底俱乐部" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 card-overlay">
+                                <p class="text-sm text-gray-200 line-clamp-2">一所重点高中的全年级倒数20名学生，秘密组建了一个“垫底俱乐部”，目标是让所有人一起及格，以免有人被开除。</p>
+                            </div>
+                            <div class="absolute top-3 right-3 bg-black/70 px-2 py-1 rounded text-xs flex items-center space-x-1">
+                                <span>2029</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center justify-between text-sm text-gray-400 mb-2">
+                                <span class="px-2 py-1 bg-slate-700 rounded text-xs text-cyan-400">剧集</span>
+                                <span>美国</span>
+                            </div>
+                            <h2 class="text-lg font-semibold text-white mb-1 line-clamp-1">垫底俱乐部</h2>
+                            <p class="text-sm text-gray-400 line-clamp-2 mb-3">一所重点高中的全年级倒数20名学生，秘密组建了一个“垫底俱乐部”，目标是让所有人一起及格，以免有人被开除。</p>
+                            <div class="tag-row"><span class="tag-chip">差生</span><span class="tag-chip">互助会</span><span class="tag-chip">校园喜剧</span></div>
+                        </div>
+                    </a>
+                </article>
+                <article class="movie-card group bg-slate-800 rounded-lg overflow-hidden hover:ring-2 hover:ring-cyan-400 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-cyan-500/20" data-card data-card-text="知音 中国大陆 剧集 2028 剧情， 历史， 音乐 古琴， 知音， 民国， 文人， 传承 1937年南京，一名古琴师和一名日本军官因一首失传琴曲成为生死知音。 1937年，南京沦陷前夜。古琴世家传人沈雁秋守着夫子庙旁一间百年琴馆。日军入城后，一位名叫中村正树的年轻军官闯入琴馆，没有烧杀，只是静静地坐了一整夜，听沈雁秋弹了一首《高山》。中村用流利的中文说，他祖父是清末来华的汉学家，临终前让他寻找失传的琴曲《流水》的俞伯牙原谱。沈雁秋冷笑道：“你们烧了半座城，还想听《流水》？”中村没有强求，但他开始每天来琴馆，不穿军装，只带一张祖父留下的一截残谱。沈雁秋发现，那残谱上记载的指法，竟和自己家传密谱中的缺失部分严丝合缝。两人在战火中的琴馆里，一弹一听，逐渐拼出完整的《流水》。但城中地下抗日组织送来密信：中村正树正是日军情报负责人，他用琴谱作掩护，在琴馆地下秘密审讯抗日志士。沈雁秋必须在完成合谱的最后一夜，用那把唐代古琴的琴弦，亲手送走这位唯一的知音。" data-year="2028" data-type="剧集">
+                    <a href="movie-1286.html" class="block movie-card-link">
+                        <div class="movie-poster aspect-[16/9] relative overflow-hidden bg-slate-900">
+                            <img src="./86.jpg" alt="知音" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 card-overlay">
+                                <p class="text-sm text-gray-200 line-clamp-2">1937年南京，一名古琴师和一名日本军官因一首失传琴曲成为生死知音。</p>
+                            </div>
+                            <div class="absolute top-3 right-3 bg-black/70 px-2 py-1 rounded text-xs flex items-center space-x-1">
+                                <span>2028</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center justify-between text-sm text-gray-400 mb-2">
+                                <span class="px-2 py-1 bg-slate-700 rounded text-xs text-cyan-400">剧集</span>
+                                <span>中国大陆</span>
+                            </div>
+                            <h2 class="text-lg font-semibold text-white mb-1 line-clamp-1">知音</h2>
+                            <p class="text-sm text-gray-400 line-clamp-2 mb-3">1937年南京，一名古琴师和一名日本军官因一首失传琴曲成为生死知音。</p>
+                            <div class="tag-row"><span class="tag-chip">古琴</span><span class="tag-chip">知音</span><span class="tag-chip">民国</span></div>
+                        </div>
+                    </a>
+                </article>
+                <article class="movie-card group bg-slate-800 rounded-lg overflow-hidden hover:ring-2 hover:ring-cyan-400 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-cyan-500/20" data-card data-card-text="空中致胜 美国 电影 2028 科幻动作 无人机, 空战, AI, 未来战争, 战术 当所有战斗机都变成无人机，最后一批人类飞行员成了必须被“淘汰”的教官。 2045年，空战已完全由“阿尔法”AI控制。人类飞行员被降级为地面观察员，只有老机长陈震还固执地每天擦拭他那架老旧的歼-50。军方决定进行最后一场“人机对抗”演习，若AI全胜，将彻底销毁所有有人驾驶战机。陈震被任命为“蓝军”教官，但他手下的六名年轻飞行员，全都只飞过模拟舱，连重力过载都没体验过。第一次模拟，蓝军全军覆没，AI甚至没有损失一架无人机。陈震决定用“不按规则出牌”的方式训练：他教他们飞山谷钻桥洞、利用无线电静默伪装成民航、甚至在机翼上绑干扰弹制造“鬼影”。正式对抗那天，AI计算出所有标准战术的概率都为零，却没想到人类会飞进火山灰云里、会用自己的机翼去撞无人机的尾翼。最后一刻，陈震关掉了所有电子设备，只用肉眼和感觉，把导弹引导到了AI指挥舰的通风口上。" data-year="2028" data-type="电影">
+                    <a href="movie-0540.html" class="block movie-card-link">
+                        <div class="movie-poster aspect-[16/9] relative overflow-hidden bg-slate-900">
+                            <img src="./90.jpg" alt="空中致胜" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 card-overlay">
+                                <p class="text-sm text-gray-200 line-clamp-2">当所有战斗机都变成无人机，最后一批人类飞行员成了必须被“淘汰”的教官。</p>
+                            </div>
+                            <div class="absolute top-3 right-3 bg-black/70 px-2 py-1 rounded text-xs flex items-center space-x-1">
+                                <span>2028</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center justify-between text-sm text-gray-400 mb-2">
+                                <span class="px-2 py-1 bg-slate-700 rounded text-xs text-cyan-400">电影</span>
+                                <span>美国</span>
+                            </div>
+                            <h2 class="text-lg font-semibold text-white mb-1 line-clamp-1">空中致胜</h2>
+                            <p class="text-sm text-gray-400 line-clamp-2 mb-3">当所有战斗机都变成无人机，最后一批人类飞行员成了必须被“淘汰”的教官。</p>
+                            <div class="tag-row"><span class="tag-chip">无人机</span><span class="tag-chip">空战</span><span class="tag-chip">AI</span></div>
+                        </div>
+                    </a>
+                </article>
+                <article class="movie-card group bg-slate-800 rounded-lg overflow-hidden hover:ring-2 hover:ring-cyan-400 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-cyan-500/20" data-card data-card-text="大话西游终结篇 中国香港 电影 2028 奇幻，爱情，喜剧 穿越，宿命，无厘头，轮回 至尊宝的第六次轮回遇上灭世天劫，这次他必须在紫霞记忆彻底消散前，改写所有平行宇宙的终点。 距离上一次西游已过五百年，至尊宝在无数平行宇宙中不断轮回，每一次都会爱上紫霞，又眼睁睁看她消失。灭世天劫“无”悄然降临，开始吞噬所有时间线。一个自称来自未来“取经人”的神秘女孩找到至尊宝，告诉他其实所有悲剧都是更高维度文明的一场情感实验。这一次，至尊宝不再戴上金箍，而是选择用自己的方式打破循环：他要把“爱”本身变成超越神佛的武器。最终决战不是打打杀杀，而是至尊宝在万物归无的瞬间，对紫霞说了一句从未说过的话。" data-year="2028" data-type="电影">
+                    <a href="movie-1148.html" class="block movie-card-link">
+                        <div class="movie-poster aspect-[16/9] relative overflow-hidden bg-slate-900">
+                            <img src="./98.jpg" alt="大话西游终结篇" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 card-overlay">
+                                <p class="text-sm text-gray-200 line-clamp-2">至尊宝的第六次轮回遇上灭世天劫，这次他必须在紫霞记忆彻底消散前，改写所有平行宇宙的终点。</p>
+                            </div>
+                            <div class="absolute top-3 right-3 bg-black/70 px-2 py-1 rounded text-xs flex items-center space-x-1">
+                                <span>2028</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center justify-between text-sm text-gray-400 mb-2">
+                                <span class="px-2 py-1 bg-slate-700 rounded text-xs text-cyan-400">电影</span>
+                                <span>中国香港</span>
+                            </div>
+                            <h2 class="text-lg font-semibold text-white mb-1 line-clamp-1">大话西游终结篇</h2>
+                            <p class="text-sm text-gray-400 line-clamp-2 mb-3">至尊宝的第六次轮回遇上灭世天劫，这次他必须在紫霞记忆彻底消散前，改写所有平行宇宙的终点。</p>
+                            <div class="tag-row"><span class="tag-chip">穿越</span><span class="tag-chip">宿命</span><span class="tag-chip">无厘头</span></div>
+                        </div>
+                    </a>
+                </article>
+                <article class="movie-card group bg-slate-800 rounded-lg overflow-hidden hover:ring-2 hover:ring-cyan-400 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-cyan-500/20" data-card data-card-text="告别亲爱的大地 中国台湾 电影 2028 剧情 / 家庭 乡土, 移民, 离别, 亲情, 时代变迁 三代父子在祖宅被征收前的最后一个夏天，用一场荒唐的寻宝游戏告别他们深爱的土地。 台南一户三代同堂的家庭，因高铁扩建面临祖宅征收。阿公坚信祖先在田间埋了值钱的“龙银”，孙子阿杰则用手机记录下这一切，父亲阿正夹在理想与现实之间。三人决定在夏天结束前挖出宝藏，过程中揭开了家族几代人的秘密与伤痕。阿公年轻时曾想离家闯荡，阿正曾因都市梦失败返乡，阿杰则即将去台北读书。最终，他们没挖到龙银，却挖出一个生锈的铁盒，里面只有一张泛黄的纸条，写着：“家就是最值钱的宝藏。”告别那天，三人跪在泥地里，用身体最后拥抱了一下大地。" data-year="2028" data-type="电影">
+                    <a href="movie-0372.html" class="block movie-card-link">
+                        <div class="movie-poster aspect-[16/9] relative overflow-hidden bg-slate-900">
+                            <img src="./72.jpg" alt="告别亲爱的大地" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 card-overlay">
+                                <p class="text-sm text-gray-200 line-clamp-2">三代父子在祖宅被征收前的最后一个夏天，用一场荒唐的寻宝游戏告别他们深爱的土地。</p>
+                            </div>
+                            <div class="absolute top-3 right-3 bg-black/70 px-2 py-1 rounded text-xs flex items-center space-x-1">
+                                <span>2028</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center justify-between text-sm text-gray-400 mb-2">
+                                <span class="px-2 py-1 bg-slate-700 rounded text-xs text-cyan-400">电影</span>
+                                <span>中国台湾</span>
+                            </div>
+                            <h2 class="text-lg font-semibold text-white mb-1 line-clamp-1">告别亲爱的大地</h2>
+                            <p class="text-sm text-gray-400 line-clamp-2 mb-3">三代父子在祖宅被征收前的最后一个夏天，用一场荒唐的寻宝游戏告别他们深爱的土地。</p>
+                            <div class="tag-row"><span class="tag-chip">乡土</span><span class="tag-chip">移民</span><span class="tag-chip">离别</span></div>
+                        </div>
+                    </a>
+                </article>
+                <article class="movie-card group bg-slate-800 rounded-lg overflow-hidden hover:ring-2 hover:ring-cyan-400 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-cyan-500/20" data-card data-card-text="爱之地 法国 / 比利时 电影 2028 剧情， 同性， 家庭 养老院， 晚年， 同性伴侣， 继承权， 欧洲 老年同性伴侣在养老院假装邻居70年，一方去世后，另一方被子女赶出房间。 比利时列日市郊一家公立养老院。95岁的朱尔和92岁的雷内住在走廊两头的房间，所有人——包括护工、邻居、甚至儿女——都以为他们只是认识七十年的老邻居。事实上，1948年，两人在煤矿更衣室一见钟情，从那时起再也没有分开过。他们从未公开出柜，因为雷内是天主教徒，朱尔怕丢掉矿工的工作。他们以“打牌”为借口每晚相聚，用煤矿黑话当作情话。雷内先走了。第二天，雷内的子女来收拾遗物，发现父亲的遗嘱里只留给朱尔一副旧扑克牌。他们不承认朱尔有任何权利，当天就把他赶出了雷内的房间，还换了门锁。朱尔抱着那副扑克牌回到自己房间，翻开每一张牌——从黑桃A到红心K，每一张背面都用铅笔写着一行小字，记录着两人七十年来每一次约会的日期、地点和当天的天气。最大的那张大王背面，写着：“列日中央火车站，1948年3月12日，雨。你多看了一眼我的靴子。”" data-year="2028" data-type="电影">
+                    <a href="movie-0803.html" class="block movie-card-link">
+                        <div class="movie-poster aspect-[16/9] relative overflow-hidden bg-slate-900">
+                            <img src="./53.jpg" alt="爱之地" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 card-overlay">
+                                <p class="text-sm text-gray-200 line-clamp-2">老年同性伴侣在养老院假装邻居70年，一方去世后，另一方被子女赶出房间。</p>
+                            </div>
+                            <div class="absolute top-3 right-3 bg-black/70 px-2 py-1 rounded text-xs flex items-center space-x-1">
+                                <span>2028</span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center justify-between text-sm text-gray-400 mb-2">
+                                <span class="px-2 py-1 bg-slate-700 rounded text-xs text-cyan-400">电影</span>
+                                <span>法国 / 比利时</span>
+                            </div>
+                            <h2 class="text-lg font-semibold text-white mb-1 line-clamp-1">爱之地</h2>
+                            <p class="text-sm text-gray-400 line-clamp-2 mb-3">老年同性伴侣在养老院假装邻居70年，一方去世后，另一方被子女赶出房间。</p>
+                            <div class="tag-row"><span class="tag-chip">养老院</span><span class="tag-chip">晚年</span><span class="tag-chip">同性伴侣</span></div>
+                        </div>
+                    </a>
+                </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-slate-900 text-gray-300">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="index.html" class="flex items-center space-x-2 mb-4 logo-link">
+                        <span class="logo-mark">▶</span>
+                        <span class="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">口碑国产好剧</span>
+                    </a>
+                    <p class="text-sm leading-relaxed max-w-md">汇集国产电视剧等视频内容，提供免费在线观看与在线点播服务，支持高清播放与分类筛选，便于按平台与热播推荐榜浏览。</p>
+                </div>
+                <div>
+                    <h2 class="font-semibold text-white mb-4">频道入口</h2>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="categories.html" class="hover:text-cyan-400 transition-colors">分类总览</a></li>
+                        <li><a href="ranking.html" class="hover:text-cyan-400 transition-colors">热播榜</a></li>
+                        <li><a href="search.html" class="hover:text-cyan-400 transition-colors">片库搜索</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="font-semibold text-white mb-4">精选分类</h2>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="category-hot.html" class="hover:text-cyan-400 transition-colors">热播推荐</a></li><li><a href="category-new.html" class="hover:text-cyan-400 transition-colors">年度新片</a></li><li><a href="category-editors.html" class="hover:text-cyan-400 transition-colors">编辑精选</a></li><li><a href="category-quality.html" class="hover:text-cyan-400 transition-colors">口碑佳作</a></li><li><a href="category-cinema.html" class="hover:text-cyan-400 transition-colors">高清影院</a></li><li><a href="category-series.html" class="hover:text-cyan-400 transition-colors">剧集片库</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 mt-8 pt-8 text-center text-sm">
+                <p>© 2026 口碑国产好剧 · 高清影视与热播推荐</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/app.js" defer></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
